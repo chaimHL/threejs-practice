@@ -38,6 +38,10 @@ spotLight.position.set(10, 10, 30)
 spotLight.intensity = 1000
 scene.add(spotLight)
 
+// 添加环境光
+const ambientLight = new THREE.AmbientLight(0xffffff)
+scene.add(ambientLight)
+
 // 添加平面
 const planeGeometry = new THREE.PlaneGeometry(30, 30)
 const planeMaterial = new THREE.MeshLambertMaterial({ color: 0xefefef })
